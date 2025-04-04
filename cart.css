@@ -1,0 +1,380 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    align-items: center;
+    height: 17vh;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+header .logo img{
+    height: 110px;
+}
+header .search{
+    display: flex;
+    margin-left: 30px;
+}
+header .search input{
+    width: 500px;
+    height: 40px;
+    padding-left: 20px;
+    border: none;
+    border-radius: 7px;
+    background-color: rgb(231, 231, 231);
+}
+header .search input::placeholder{
+    font-size: 15px;
+    font-weight: 600;
+}
+header .search .ser1{
+    position: relative;
+}
+header .search .ser1 i{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 20px;
+    color: gray;
+}
+header .search .ind{
+    display: flex;
+    margin-left: 50px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+header .search .ind .ind1{
+    background-image: linear-gradient(to right, rgb(250, 210, 230),rgb(241, 230, 248));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+}
+header .search .ind .ind1 span{
+    font-weight: 600;
+    font-size: 15px;
+}
+header .search .ind .ind2{
+    background-image: linear-gradient(to left,rgb(230, 253, 230), rgb(223, 223, 255),rgb(244, 224, 255));
+    display: flex;
+    border-left: 1px solid rgba(128, 128, 128, 0.411);
+    align-items: center;
+    justify-content: center;
+    padding: 5px 20px;
+}
+header .search .ind .ind2 select{
+    padding: 3px 7px;
+    background-color: rgba(128, 128, 128, 0);
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+header .search .ind img{
+    height: 20px;
+    margin-right: 7px;
+}
+header .search .ind .ind2 i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+header .search .logi{
+    margin-left: 30px;
+    margin-top: 5px;
+}
+header .search .logi i{
+    font-size: 25px;
+    margin-left: 10px;
+    color: gray;
+    transition: 0.2s;
+}
+header .search .logi i:hover{
+    color: rgb(255, 70, 199);
+}
+/* end header */
+nav{
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(238, 238, 238);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    /* margin-top: 15px; */
+}
+nav  ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(90, 90, 90);
+    font-size: 13px;
+    font-weight: 700;
+    transition: 0.2s;
+}   
+nav  ul li a:hover{
+    color: rgb(206, 11, 11);
+}
+nav .del{
+    display: flex;
+    align-items: center;
+}
+nav img{
+    height: 50px;
+    animation: del;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+@keyframes del{
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(250px);
+    }
+}
+nav span{
+    color: red;
+    font-weight: 600;
+    border-left: 1px solid rgba(128, 128, 128, 0.411);
+    height: 50px;
+    padding-top: 15px;
+    padding-left: 20px;
+}
+/* end nav */
+.productbg{
+    display: flex;
+    height: 30vh;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px 40px;
+}
+.productbg a{
+    text-decoration: none;
+    color: black;
+}
+.productbg .images img{
+    height: 120px;
+    border-radius: 50%;
+}
+.productbg p{
+    font-size: 19px;
+    text-align: center;
+    margin-top: 5px;
+}
+.productbg a:hover{
+    opacity: 0.7;
+}
+/* end productbg */
+.cart-img{
+    margin-top: 50px;
+    text-align: center;
+}
+.cart-img h3{
+    color: rgb(83, 83, 83);
+}
+.cart-img h3 span{
+    color: red;
+    font-size: 25   px;
+}
+.cart-img h1{
+    margin: 30px 0px 10px;
+    color: rgb(87, 87, 87);
+    font-size: 30px;
+}
+/*  */
+.cnt{
+    margin-top: 20px;
+    height: 30vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #e5e5e5;
+}
+.cnt p{
+    margin-bottom: 15px;
+}
+.cnt .rights p i{
+    color: #363636;
+    font-size: 20px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 7px;
+    margin-left: 5px;
+}
+.cnt .rights p:nth-child(1),
+.cnt .store p{
+    font-weight: bold;
+    font-size: 20px;
+}
+.cnt .rights p:nth-child(2){
+    font-size: 15px;
+    width: 300px;
+    padding-top: 10px;
+}
+.cnt .store img{
+    height: 50px;
+    border-radius: 10px;
+}
+/* end store */
+footer{
+    height: 29vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer ul li{
+    list-style: none;
+    margin-bottom: 5px;
+}
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer div h3{
+    font-size: 25px;
+    color: white;
+    padding: 15px 0;
+}
+footer div:nth-child(4) label{
+    color: white;
+    /* font-size: 20px; */
+}
+footer div:nth-child(4) input{
+    width: 230px;
+    height: 40px;
+    border: 3px solid yellow;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+footer div:nth-child(4) button{
+    height: 40px;
+    width: 40px;
+    background-color: yellow;
+    border: 1px solid yellow;
+}
+footer div:nth-child(4) i{
+    font-size: 15px;
+}
+
+@media screen and (max-width:425px){
+    header{
+        display:inline-block;
+        height: auto;
+        width: 100%;
+        position: relative;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+    header .logo img{
+        height: 90px;
+    }
+    header .search{
+        margin: 0 0 20px 25px;
+    }
+    header .search input{
+        width: 180px;
+    }
+    header .search .ser1{
+        position: absolute;
+        top: 20px;
+        left: 220px;
+    }
+    header .search .ind{
+        margin-left: 0px;
+    }
+    header .search .ind .ind1{
+        padding: 5px 15px;
+    }
+    header .search .ind .ind1 span{
+        font-weight: 600;
+    }
+    header .search .ind .ind2{
+        padding: 7px 10px;
+    }
+    header .search .ind .ind2 select{
+        padding: 3px;
+        font-size: 15px;
+    }
+    header .search .ind img{
+        height: 15px;
+    }
+    header .search .ind .ind2 i{
+        font-size: 15px;
+        margin-right: 0px;
+    }
+    header .search .logi{
+        display: flex;
+        margin-left: 20px;
+        margin-top: 9px;
+    }
+    header .search .logi i{
+        font-size: 21px;
+    }
+    /* end */
+    .productbg{
+        height: auto;
+    }
+    nav{
+        display: none;
+    }
+    .cart-img img{
+        height: 250px;
+    }
+    .cart-img h1{
+        font-size: 25px;
+    }
+    /* end */
+    .cnt{
+        padding: 10px 0;
+        height: auto;
+        text-align: center;
+    }
+    .cnt p{
+        margin-bottom: 10px;
+    }
+    .cnt .rights p i{
+        font-size: 17px;
+    }
+    .cnt .rights p:nth-child(1),
+    .cnt .store p{
+        font-size: 15px;
+    }
+    .cnt .rights p:nth-child(2){
+        font-size: 13px;
+    }
+    .cnt .store img{
+        height: 40px;
+    }
+    /* end */
+    footer{
+        height: auto;
+        padding: 10px ;
+    }
+    footer div{
+        margin: 0 50px;
+    }
+    footer div:nth-child(4){
+        margin: 0;
+        text-align: center;
+        margin-top: 25px;
+    }
+    footer div:nth-child(4) label{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    footer div:nth-child(4) input{
+        width: 200px;
+        height: 40px;
+        margin-bottom: 30px;
+    }
+}
